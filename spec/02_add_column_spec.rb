@@ -2,7 +2,7 @@ require_relative 'spec_helper'
 
 
 
-puts describe 'student' do
+ describe 'student' do
   before :each do
     sql = "DROP TABLE IF EXISTS students"
     ActiveRecord::Base.connection.execute(sql)
